@@ -3,7 +3,11 @@ import graphql from "graphql";
 import { graphqlHTTP } from "express-graphql";
 import schema from "./GraphQl/Schema/Queries.js";
 import cors from "cors";
+import * as dotenv from "dotenv";
 import mongoose from "mongoose";
+
+// dotenv for heroku
+dotenv.config();
 
 // intializing app
 const app = express();
@@ -27,7 +31,10 @@ app.use(
 mongoose
   .connect(Url, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((res) => {
-    app.listen(3001, console.log("Started Succefully at port 3001"));
+    app.listen(
+      process.env.PORT || 3001,
+      console.log("Started Succefully at port 3001")
+    );
   })
   .catch((err) => {
     console.log(err);
