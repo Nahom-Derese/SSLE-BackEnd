@@ -16,8 +16,7 @@ const app = express();
 app.use(cors());
 
 // mongoDB Atlas mongoose URI
-// const Url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.sothe.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
-const Url = `mongodb+srv://Nahom:kEwj3AtUtVGvkWqr@cluster0.sothe.mongodb.net/Students?retryWrites=true&w=majority`;
+const Url = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.sothe.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`;
 
 // Make A GraphQL Endpoint
 app.use(
