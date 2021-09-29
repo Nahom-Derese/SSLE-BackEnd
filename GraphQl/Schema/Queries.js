@@ -7,7 +7,6 @@ import {
 } from "graphql";
 import StudentModel from "../../Models/Student.js";
 import Student from "../Defs/Student.js";
-import Data from "../../run_results.json";
 
 const Rootquery = new GraphQLObjectType({
   name: "RootQueryType",

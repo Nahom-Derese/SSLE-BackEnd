@@ -3,11 +3,11 @@ import graphql from "graphql";
 import { graphqlHTTP } from "express-graphql";
 import schema from "./GraphQl/Schema/Queries.js";
 import cors from "cors";
-import * as dotenv from "dotenv";
+// import * as dotenv from "dotenv";
 import mongoose from "mongoose";
 
 // dotenv for heroku
-dotenv.config();
+// dotenv.config();
 
 // intializing app
 const app = express();
