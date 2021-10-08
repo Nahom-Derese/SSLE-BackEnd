@@ -1,5 +1,5 @@
 import express from "express";
-import graphql from "graphql";
+// import graphql from "graphql";
 import { graphqlHTTP } from "express-graphql";
 import schema from "./GraphQl/Schema/Queries.js";
 import cors from "cors";

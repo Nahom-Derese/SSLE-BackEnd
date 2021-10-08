@@ -36,6 +36,9 @@ const studentSchema = new Schema({
   Placement: {
     type: Placement,
   },
+  Picture: {
+    type: String,
+  }
 });
 
 const StudentModel = mongoose.model("results", studentSchema);

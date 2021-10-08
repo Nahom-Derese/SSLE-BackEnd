@@ -24,6 +24,7 @@ const Student = new GraphQLObjectType({
         return parent.Placement;
       },
     },
+    Picture: {type: GraphQLString},
   }),
 });
 
